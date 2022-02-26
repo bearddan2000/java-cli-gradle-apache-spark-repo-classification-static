@@ -1,0 +1,14 @@
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+  implementation 'org.apache.xbean:xbean-asm6-shaded:4.10'
+  implementation 'org.apache.spark:spark-core_2.11:2.4.1'
+}
+mainClassName = 'example.Main'
